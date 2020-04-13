@@ -6,18 +6,18 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=hostapd-scifi
-PKG_RELEASE:=8
+PKG_NAME:=hostapd
+PKG_RELEASE:=9
 
-#PKG_SOURCE_URL:=http://w1.fi/hostap.git
-#PKG_SOURCE_PROTO:=git
-#PKG_SOURCE_DATE:=2019-08-08
-#PKG_SOURCE_VERSION:=ca8c2bd28ad53f431d6ee60ef754e98cfdb4c17b
-#PKG_MIRROR_HASH:=9d9f1c60afa5324ee17219bd3ec61c1a6fa4043b4187da9bb44e59025d3ed31d
+PKG_SOURCE_URL:=http://w1.fi/hostap.git
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_DATE:=2019-08-08
+PKG_SOURCE_VERSION:=ca8c2bd28ad53f431d6ee60ef754e98cfdb4c17b
+PKG_MIRROR_HASH:=9d9f1c60afa5324ee17219bd3ec61c1a6fa4043b4187da9bb44e59025d3ed31d
 
-PKG_MAINTAINER:=Matheus Monteiro <matheusmonteiroalves@id.uff.br>
-#PKG_LICENSE:=BSD-3-Clause#
-#PKG_CPE_ID:=cpe:/a:w1.fi:hostapd
+PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
+PKG_LICENSE:=BSD-3-Clause
+PKG_CPE_ID:=cpe:/a:w1.fi:hostapd
 
 PKG_BUILD_PARALLEL:=1
 PKG_ASLR_PIE_REGULAR:=1
@@ -129,7 +129,7 @@ DRV_DEPENDS:=+PACKAGE_kmod-cfg80211:libnl-tiny
 
 define Package/hostapd/Default
   SECTION:=net
-  CATEGORY:=SCIFI
+  CATEGORY:=Network
   SUBMENU:=WirelessAPD
   TITLE:=IEEE 802.1x Authenticator
   URL:=http://hostap.epitest.fi/
