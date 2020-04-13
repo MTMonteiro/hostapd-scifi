@@ -129,7 +129,7 @@ DRV_DEPENDS:=+PACKAGE_kmod-cfg80211:libnl-tiny
 
 define Package/hostapd/Default
   SECTION:=net
-  CATEGORY:=Network
+  CATEGORY:=SCIFI
   SUBMENU:=WirelessAPD
   TITLE:=IEEE 802.1x Authenticator
   URL:=http://hostap.epitest.fi/
